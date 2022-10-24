@@ -1,6 +1,7 @@
 import { Panel } from '../panel';
 import { teslaConfig } from './home.config';
 import { Button } from '../button';
+import { Background } from '../background';
 
 export const Home = () => {
   return (
