@@ -1,10 +1,5 @@
-export const Button = ({ button1Text, button2Text }) => {
-  return (
-    <>
-      <div>
-        <button>{button1Text}</button>
-        <button>{button2Text}</button>
-      </div>
-    </>
-  );
+import * as S from './button.style';
+
+export const Button = ({ children, nuance }) => {
+  <S.Button nuance={nuance}>{children}</S.Button>;
 };
