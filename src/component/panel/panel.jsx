@@ -1,11 +1,29 @@
-export const Panel = ({ sectionTitle = 'default title', link, children }) => {
+import { string } from 'prop-types';
+
+import { Text } from '..';
+
+import * as S from './panel.style';
+
+const Panel = ({ title, text, link }) => {
   return (
-    <div>
-      <h1>{sectionTitle}</h1>
-      <p>
-        Order online for
-        <a href={link}>Touchless delivery</a>
-      </p>
-    </div>
+    <S.Panel>
+      <Text isTitle>{title}</Text>
+      <Text>{text}</Text>
+      <Text isLink>{link}</Text>
+    </S.Panel>
   );
 };
+
+Panel.defaultProps = {
+  title: '',
+  text: '',
+  link: '',
+};
+
+Panel.propTypes = {
+  title: string,
+  text: string,
+  link: string,
+};
+
+export default Panel;

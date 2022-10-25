@@ -1,1 +1,1 @@
-export { Panel } from './panel';
+export { default as Panel } from './panel';
