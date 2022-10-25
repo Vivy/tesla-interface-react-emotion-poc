@@ -7,7 +7,7 @@ const Tesla = () => {
   useEffect(() => {
     (async () => {
       try {
-        if (window.location.port === '3003') {
+        if (window.location.port === '3001') {
           const result = await (
             await fetch('http://local:3333/section')
           ).json();
@@ -15,7 +15,9 @@ const Tesla = () => {
           update(result);
         } else {
           const result = await (
-            await fetch('https://raw.githubusercontent.com/.json')
+            await fetch(
+              'https://raw.githubusercontent.com/marianzburlea/simple-api/main/data-base.json'
+            )
           ).json();
 
           update(result.tesla);
