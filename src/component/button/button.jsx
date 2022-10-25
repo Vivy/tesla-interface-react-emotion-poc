@@ -1,5 +1,7 @@
 import * as S from './button.style';
 
-export const Button = ({ children, nuance }) => {
+const Button = ({ children, nuance }) => {
   <S.Button nuance={nuance}>{children}</S.Button>;
 };
+
+export default Button;

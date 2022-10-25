@@ -1,5 +1,5 @@
 import { css } from '@emotion/react';
-import styled from '@emotion/react';
+import styled from '@emotion/styled';
 
 export const Chevron = styled.a`
   width: 48px;
