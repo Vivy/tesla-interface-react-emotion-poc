@@ -7,6 +7,7 @@ const Background = ({ section, goTo }) => {
   return (
     <S.Background image={id} id={id}>
       <Panel text={text} title={who} link={link} />
+
       <Box gap='large'>
         <Box gap='small'>
           {buttonList.map((buttonText, key) => (
