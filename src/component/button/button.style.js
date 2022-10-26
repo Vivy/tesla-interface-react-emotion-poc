@@ -1,8 +1,11 @@
 import styled from '@emotion/styled';
 
-export const Button = styled.button`
+export const Button = styled.div`
   border: 0;
   background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 256px;
   height: 40px;
   cursor: pointer;

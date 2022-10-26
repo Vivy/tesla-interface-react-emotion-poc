@@ -14,7 +14,6 @@ const Background = ({ section, goTo }) => {
             <Button nuance={key}>{buttonText}</Button>
           ))}
         </Box>
-
         <Chevron id={id} goTo={goTo} />
       </Box>
     </S.Background>

@@ -33,6 +33,7 @@ export const Text = styled.div`
   white-space: nowrap;
   color: ${getColor};
   justify-self: center;
+  cursor: ${({ isLink }) => (isLink ? 'pointer' : '')};
 
   ${getTitle}
   ${getLink}
