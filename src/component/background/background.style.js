@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const Background= styled.div`
+export const Background = styled.div`
   height: 100vh;
   width: 100vw;
   padding: 32px;
@@ -10,11 +10,11 @@ export const Background= styled.div`
   justify-content: space-between;
   align-items: center;
 
-  background-image: url(${({image}) => `/image/background/${image}-mobile.jpg`});
+  background-image: url(${({ image }) => `${process.env.PUBLIC_URL}/image/background/${image}-mobile.jpg`});
   background-size: cover;
   background-position: center;
 
   @media screen and (min-width: 768px) {
-    background-image: url(${({image}) => `/image/background/${image}.jpg`})
+    background-image: url(${({ image }) => `${process.env.PUBLIC_URL}/image/background/${image}.jpg`});
   }
-`
+`;
